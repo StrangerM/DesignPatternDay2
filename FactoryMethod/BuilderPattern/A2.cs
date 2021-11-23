@@ -4,10 +4,11 @@ using System.Text;
 
 namespace BuilderPattern
 {
-    public interface IBuilder
+    public class A2 : Builder
     {
-        void BasicCar();
-        void PremiumCar();
-        void SuperMegaCar();
+        public A2() : base()
+        {
+            
+        }
     }
 }
