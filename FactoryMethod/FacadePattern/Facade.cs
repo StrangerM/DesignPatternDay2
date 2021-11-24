@@ -19,8 +19,7 @@ namespace FacadePattern
         public Facade(Assembler assembler, Compiler compiler)
         {
             _assembler = assembler;
-            _compiler = compiler;
-            
+            _compiler = compiler;           
         }
 
         public void CompileAndSave(string code)

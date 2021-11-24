@@ -6,7 +6,10 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GameComputer gameComputer = new GameComputer();
+
+            new CompWithLight(gameComputer).Show();
+            new CompWithWiFI(gameComputer).Show();
         }
     }
 }
