@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PrototypePattern
 {
-    public class Country
+    public class Country : Prototype
     {
         private string _name;
 
@@ -66,7 +66,7 @@ namespace PrototypePattern
             }
         }
 
-        public Country DeepCopy()
+        public override Prototype DeepCopy()
         {
             Country country = this.MemberwiseClone() as Country;
             country._cities = new List<Cities>();

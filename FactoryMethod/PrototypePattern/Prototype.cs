@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PrototypePattern
 {
-    public class Prototype
+    public abstract class Prototype
     {
+        public abstract Prototype DeepCopy();
     }
 }

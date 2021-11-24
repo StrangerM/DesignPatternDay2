@@ -26,7 +26,7 @@ namespace PrototypePattern
 
             country1.Show();
 
-            Country country2 = country1.DeepCopy();
+            Country country2 = (Country)country1.DeepCopy();
             Console.WriteLine("========");
 
             country2.ChangeCity("Uzhgorod", "Kharkiv", 1500000);
