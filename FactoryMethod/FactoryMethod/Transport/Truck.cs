@@ -8,6 +8,5 @@ namespace AbstractFactory.Transport
     public class Truck : ITransport 
     {
         public string Address { get; private set; }
-
     }
 }

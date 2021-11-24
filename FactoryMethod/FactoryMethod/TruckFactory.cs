@@ -12,5 +12,5 @@ namespace AbstractFactory
         {
             return transport = new Truck();
         }
-     }
+    }
 }

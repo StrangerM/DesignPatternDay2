@@ -7,6 +7,5 @@ namespace AbstractFactory.Transport
     public interface ITransport
     {
         public string Address { get;}
- 
     }
 }

@@ -9,5 +9,4 @@ namespace AbstractFactory.Transport
     {
         public string Address { get; private set; }
     }
-
 }

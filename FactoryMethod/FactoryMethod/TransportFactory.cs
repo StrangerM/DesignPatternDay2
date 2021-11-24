@@ -9,7 +9,6 @@ namespace AbstractFactory
     public abstract class TransportFactory
     {
         protected ITransport transport;
-
         public abstract ITransport CreateTransport();
     }
 }
