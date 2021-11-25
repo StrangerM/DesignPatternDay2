@@ -6,10 +6,10 @@ namespace StatePattern
     {
         static void Main(string[] args)
         {
-            Sportsman water = new Sportsman(new WalkState());
-            water.IncreaseExerciseIntensity();
-            water.Relax();
-            water.Relax();
+            Sportsman sportsman = new Sportsman(new WalkState());
+            sportsman.IncreaseExerciseIntensity();
+            sportsman.Relax();
+            sportsman.Relax();
             Console.Read();
         }
     }
