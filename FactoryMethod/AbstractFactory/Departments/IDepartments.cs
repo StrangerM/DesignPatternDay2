@@ -11,12 +11,10 @@ namespace AbstractFactory.Departments
         IJacket OrderJacketA();
         IJacket OrderJacketB();
         IJacket OrderJacketC();
-
         IParts OrderPartBack();
         IParts OrderPartForward();
         IParts OrderPartCollar();
         IParts OrderPartHood();
         IParts OrderPartSleew();
-
     }
 }
