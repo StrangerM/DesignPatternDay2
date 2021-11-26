@@ -6,9 +6,6 @@ namespace StatePattern
 {
     public class WalkState : SportsmanState
     {
-        public override void SomeState(Sportsman sportsman)
-        {
-            sportsman.State = new WalkState();
-        }
+     
     }
 }

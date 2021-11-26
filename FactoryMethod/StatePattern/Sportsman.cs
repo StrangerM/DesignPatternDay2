@@ -10,19 +10,27 @@ namespace StatePattern
         public Sportsman(SportsmanState ws)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            State = ws;
+            TransitionTo(ws);
         }
+
+        public void TransitionTo(SportsmanState state)
+        {
+            State = state;
+            State.SetContext(this);
+
+        }
+
         public void IncreaseExerciseIntensity()
         {
             if (State.GetType() == typeof(StoodState))
             {
                 Console.WriteLine("Ходьба");
-                State = new WalkState();
+                State.StateWalk(this);
             }
             else if (State.GetType() == typeof(WalkState))
             {
                 Console.WriteLine("Починаєм біг");
-                State = new RunState();
+                State.StateRun(this);
             }
             else if (State.GetType() == typeof(RunState))
             {
@@ -34,12 +42,12 @@ namespace StatePattern
             if (State.GetType() == typeof(RunState))
             {
                 Console.WriteLine("Зменшуєм темп бігу до ходьби");
-                State = new WalkState();
+                State.StateWalk(this);
             }
             else if (State.GetType() == typeof(WalkState))
             {
                 Console.WriteLine("Зупинились відпочити");
-                State = new StoodState();
+                State.StateStood(this);
             }
             else if (State.GetType() == typeof(StoodState))
             {
