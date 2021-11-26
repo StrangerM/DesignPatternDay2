@@ -6,7 +6,7 @@ namespace BuilderPattern
 {
     public class A1 : Builder
     {
-        public A1()
+        public A1() : base()
         {
             
         }  
