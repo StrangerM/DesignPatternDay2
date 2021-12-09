@@ -1,1 +1,1 @@
-# DesignPatternDay2
+# DesignPattern
